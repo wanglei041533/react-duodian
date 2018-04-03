@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.1.8",
+    "axios": "^0.18.0",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-redux": "^5.0.7",
@@ -23,5 +24,14 @@
     "node-sass-chokidar": "^1.2.2",
     "babel-plugin-import": "^1.6.7",
     "react-app-rewired": "^1.5.0"
+  },
+  "proxy":{
+    "^api":{
+      "target":"https://wxcmsapi.dmall.com/weixin/home/businessIndex?param=%7B%22index%22%3A0%2C%22currentPage%22%3A1%2C%22reqUrl%22%3A%22https%3A%2F%2Fcmsapi.dmall.com%2Fapp%2Fweb%2Fjson%2F1%2F10485%22%2C%22pairs%22%3A%221-0-10485%22%2C%22code%22%3A%221%22%2C%22networkType%22%3A2%7D&token=4C35965665FDB4542E0EAD03685299B7D1DFC83AFEA126E2557B5E80C373F2321DA23C9DA278A57C739D78F7E40297048619B1B7B8D22C3B855871A903368417DAF476FB487DFC1C06D35062801BC5269B414E9562E5C258D1E1B27C81B60AEF62E834CCE53F42D3EDCAA1DE630B639D8FF0C9E7F6203FB891B011E612FBEFA4&source=2&tempid=C7EA9A2376100002F25B1B90681017F6&pubParam=%7B%7D&_=1522726391464",
+      "changeOrigin":true,
+      "pathRewrite":{
+        "^api":""
+      }
+    }
   }
 }
